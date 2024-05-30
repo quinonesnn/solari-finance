@@ -28,3 +28,29 @@ Journey to create Solari Finance
    2.  You can mark a folder as a route group
    3. You can make a group by wrapping a folder name in ()
    4. (root)
+
+10. Total Balance box
+    1.  using new packages, query-string
+    2.  using react-countup
+        1.  upon import this package gave a useRef error
+            1.  external packages will use client side functionalities 
+            2.  we create a new component that is client side
+            3.  AnimatedCounter
+                1.  this has the 'use client' at the top
+    3. DoughnutChart
+        1. chart.js
+        2.  https://www.chartjs.org/
+        3.  framework integration with react https://react-chartjs-2.js.org/ 
+        4.  this will also be a client side so add "use client"
+ 11. Sidebar
+    1. get path name using usePathname from next/navigation
+       1. https://nextjs.org/docs/app/api-reference/functions/use-pathname
+    2. Add image/Next
+       1. https://nextjs.org/docs/app/api-reference/components/image
+       2. The Image Component requires the following properties: src, width, height, and alt
+    3. Map through constants/index.ts/sidebarLinks array
+       1. create an isActive state variable to change styling on click
+ 12. MobileNav
+     1.  Shadcn Sheet Component
+         1.  https://ui.shadcn.com/docs/components/sheet
+         2.  Modify the sidebar content to fit inside the sheet content

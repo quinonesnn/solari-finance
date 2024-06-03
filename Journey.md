@@ -42,7 +42,7 @@ Journey to create Solari Finance
         2.  https://www.chartjs.org/
         3.  framework integration with react https://react-chartjs-2.js.org/ 
         4.  this will also be a client side so add "use client"
- 11. Sidebar
+11. Sidebar
     1. get path name using usePathname from next/navigation
        1. https://nextjs.org/docs/app/api-reference/functions/use-pathname
     2. Add image/Next
@@ -50,7 +50,28 @@ Journey to create Solari Finance
        2. The Image Component requires the following properties: src, width, height, and alt
     3. Map through constants/index.ts/sidebarLinks array
        1. create an isActive state variable to change styling on click
- 12. MobileNav
+12. MobileNav
      1.  Shadcn Sheet Component
          1.  https://ui.shadcn.com/docs/components/sheet
          2.  Modify the sidebar content to fit inside the sheet content
+13. RightSidebar
+     1.  The rightSidebar is only used in the home page according to my Figma file
+      2.  I use and aside tag since this oßnly populates on larger screens
+          1.  added hidden and noscroll bar
+14. BankCard
+    1.  copied configurations from figma
+15. SignIn / SignUp
+    1.  pages are server side and the component will be client side
+    2.  Shared AuthForm component
+    3.  Shadcn Forms
+        1.  https://ui.shadcn.com/docs/components/form
+        2.  react-hook-form
+        3.  zod for form validation
+    4.  Auth form schema using zod validation
+        1.  schema in lib/utils.ts/authFormSchema
+        2.  accepts type of sign in or sign up
+    5.  handle on submit
+        1.  use useRouter from next/navigation
+    6.  Create new folder for server actions
+        1.  lib/actions/user.action.ts
+        2.  "use server"

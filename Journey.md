@@ -75,3 +75,28 @@ Journey to create Solari Finance
     6.  Create new folder for server actions
         1.  lib/actions/user.action.ts
         2.  "use server"
+16. Appwrite
+    1.  Created new project
+    2.  modeled .env as seen in .env.example
+    3.  Added project ID and API SECRET
+    4.  create database, 3 collections, users, banks, transactions.
+    5.  SSR w Next.js
+        1.  https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-1
+        2.  Initialize SDK
+            1.  Create a function to build services you need in a file like src/lib/server/appwrite.js and exporting the instances
+            2. Creates Session Client and Admin Client
+         3. Get Logged in User
+            1. Build a utility function to get the logged in user from Appwrite. This function will be used in our components and routes to check if a user is logged in, and access the user's details.
+            2. since its a user action we can add it to lib/actions/user.action.ts
+         4. Sign up
+            1. When the form is submitted, we want to send the email and password to Appwrite to authenticate the user.
+17. Sentry Session Replay
+    1.  Sentry.io
+    2.  npx @sentry/wizard@latest -i nextjs
+    3.  using Sentry SaaS (sentry.io)
+    4.  No to ad blockers
+    5.  Yes to example page and yes to using CI/CD to deploy (Vercel)
+    6.  created 3 files
+        1.  sentry.server
+        2.  sentry.edge
+        3.  sentry.client

@@ -100,3 +100,41 @@ Journey to create Solari Finance
         1.  sentry.server
         2.  sentry.edge
         3.  sentry.client
+18. createBankAccount in lib/user/actions
+    1.  this is strictly for appwrite
+    2.  destructure from process.env
+    3.  Move user from session to being user in appwrite
+    4.  schema for bankAccount in appwrite
+        1.  accountId, bankId, accessToken, fundingSourceUrl, shareableId,
+        2.  usersId is a relationship, banks to users many to one
+19. Plaid API
+    1. https://plaid.com/docs/quickstart/
+    2. https://dashboard.plaid.com/overview
+    3. go to developers/keys
+       1. Copy client_id to .env PLAID_CLIENT_ID
+       2. for to begin copy the sandbox api secret to PLAID_SECRET
+       3. PLAID_ENV=sandbox
+          PLAID_PRODUCTS=auth,transactions,identity
+          PLAID_COUNTRY_CODES=US,CA
+    4. https://plaid.com/docs/link/web/
+       1. npm install plaid
+       2. npm install react-plaid-link
+       3. create lib/plaid.ts for plaidClient
+    5. components/PlaidLink.tsx
+       1. use plaidClient to make createLinkToken in user.actions
+       2. exchangePublicToken
+          1. Create a link token
+          2. pass generated link token to Plaid Link
+          3. Trigger flow of connecting bank account to application through Plaid Link
+          4. on Success, plaid link will provide temp public token
+          5. exchange public token with permanent access token
+          6. exchange access token to get bank account information
+          7. connect with processor (dwolla)
+20. Dwolla API
+     1.  npm install dwolla-v2
+     2.  Used integration example from Dwolla Github
+         1.  https://github.com/Dwolla/integration-examples/blob/9f29f77655bf0e7231a8b8e5e7486a551d77d7b3/packages/plaid-funding-source/app/dwolla.ts
+     3.  Added Transfering Between Users (Step5: Initiating a transfer)
+         1.  https://developers.dwolla.com/docs/balance/transfer-money-between-users/create-transfer
+21. Making SignUp Atmoic
+    1.  Account creation has to add them to DB and connect to Plaid and Dwolla

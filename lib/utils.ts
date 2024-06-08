@@ -189,6 +189,8 @@ export function decryptId(id: string) {
 
 export const getTransactionStatus = (date: Date) => {
   const today = new Date();
+  // Getting date 2 days ago because it take that long in sandbox mode
+  // in production should be changed to 1 working day (typical time for bank transactions)
   const twoDaysAgo = new Date(today);
   twoDaysAgo.setDate(today.getDate() - 2);
 

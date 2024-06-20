@@ -23,10 +23,10 @@ const config = {
         fill: {
           1: "rgba(255, 255, 255, 0.10)",
         },
-        bankGradient: "#0179FE",
+        bankGradient: "#FF8800",
         indigo: {
-          500: "#6172F3",
-          700: "#3538CD",
+          500: "#F59E0B",
+          700: "#B45309",
         },
         success: {
           25: "#F6FEF9",
@@ -44,19 +44,19 @@ const config = {
           700: "#C11574",
           900: "#851651",
         },
-        blue: {
-          25: "#F5FAFF",
-          100: "#D1E9FF",
-          500: "#2E90FA",
-          600: "#1570EF",
-          700: "#175CD3",
-          900: "#194185",
+        orange: {
+          25: "#FFF7ED",
+          100: "#FFEDD5",
+          500: "#F97316",
+          600: "#EA580C",
+          700: "#C2410C",
+          900: "#9A3412",
         },
         sky: {
           1: "#F3F9FF",
         },
         black: {
-          1: "#00214F",
+          1: "#0d0d0d",
           2: "#344054",
         },
         gray: {
@@ -70,7 +70,7 @@ const config = {
         },
       },
       backgroundImage: {
-        "bank-gradient": "linear-gradient(90deg, #0179FE 0%, #4893FF 100%)",
+        "bank-gradient": "linear-gradient(90deg, #FF8800 0%, #FFB247 100%)",
         "gradient-mesh": "url('/icons/gradient-mesh.svg')",
         "bank-green-gradient":
           "linear-gradient(90deg, #01797A 0%, #489399 100%)",

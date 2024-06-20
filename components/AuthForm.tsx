@@ -32,7 +32,6 @@ const AuthForm = ({type} :{type: string}) => {
     const onSubmit = async (data: z.infer<typeof formSchecma>) => {
         setIsLoading(true)
         try{
-            console.log(data)
             if (type === 'sign-up') {
                 const userData = {
                     firstName: data.firstName!,
@@ -71,10 +70,10 @@ const AuthForm = ({type} :{type: string}) => {
                 <Image
                     src='/icons/logo.svg'
                     alt='Solari Logo'
-                    width={34}
-                    height={34}
+                    width={60}
+                    height={60}
                 />
-                <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">Solari</h1>
+                <h1 className="text-30 font-ibm-plex-serif font-bold text-orange-700">Solari</h1>
             </Link>
             <div className="flex flex-col gap-1 md:gap-3">
                 <h1 className="text-24 lg:text-36 font-semibold text-gray-900">
@@ -106,7 +105,7 @@ const AuthForm = ({type} :{type: string}) => {
                                 <CustomInput control={form.control} name="postalCode" label="Postal Code" placeholder="ex: 11101" />
                             </div>
                             <div className="flex gap-4">
-                                <CustomInput control={form.control} name="dateOfBirth" label="Address" placeholder="YYYY-MM-DD" />
+                                <CustomInput control={form.control} name="dateOfBirth" label="Date Of Birth" placeholder="YYYY-MM-DD" />
                                 <CustomInput control={form.control} name="ssn" label="SSN" placeholder="ex: 123-45-6789" />
                             </div>
                             

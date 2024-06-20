@@ -55,6 +55,10 @@ const BankCard = ({account, userName, showBalance = true} : CreditCardProps ) =>
             />
         </Link>
         {/* Copy the shareable id to the clipboard */}
+        {/* <div className='flex flex-col mt-2 bg-orange-100 rounded-lg'>
+            <p className='text-12 font-semibold mt-3 ml-4'>{account.name}'s Shareable Id:</p>
+            {showBalance && <Copy title={account?.shareableId}/>}
+        </div> */}
         {showBalance && <Copy title={account?.shareableId}/>}
     </div>
   )

@@ -51,15 +51,15 @@ export const ITEMS = [
 
 export const topCategoryStyles = {
   "Food and Drink": {
-    bg: "bg-blue-25",
-    circleBg: "bg-blue-100",
+    bg: "bg-orange-25",
+    circleBg: "bg-orange-100",
     text: {
-      main: "text-blue-900",
-      count: "text-blue-700",
+      main: "text-orange-900",
+      count: "text-orange-700",
     },
     progress: {
-      bg: "bg-blue-100",
-      indicator: "bg-blue-700",
+      bg: "bg-orange-100",
+      indicator: "bg-orange-700",
     },
     icon: "/icons/monitor.svg",
   },
@@ -129,15 +129,15 @@ export const transactionCategoryStyles = {
     chipBackgroundColor: "bg-[#ECFDF3]",
   },
   Travel: {
-    borderColor: "border-[#0047AB]",
-    backgroundColor: "bg-blue-500",
-    textColor: "text-blue-700",
-    chipBackgroundColor: "bg-[#ECFDF3]",
+    borderColor: "border-[#AB6400]",
+    backgroundColor: "bg-orange-500",
+    textColor: "text-orange-700",
+    chipBackgroundColor: "bg-inherit",
   },
   default: {
     borderColor: "",
-    backgroundColor: "bg-blue-500",
-    textColor: "text-blue-700",
+    backgroundColor: "bg-orange-500",
+    textColor: "text-orange-700",
     chipBackgroundColor: "bg-inherit",
   },
 };

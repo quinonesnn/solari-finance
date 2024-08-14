@@ -4,9 +4,9 @@ import Image from 'next/image'
 import React from 'react'
 import Copy from './Copy'
 
-const BankCard = ({account, userName, showBalance = true} : CreditCardProps ) => {
+const BankCard = ({key, account, userName, showBalance = true} : CreditCardProps ) => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col' key={key}>
         <Link href={`/transaction-history/?id=${account.appwriteItemId}`} className='bank-card'>
             <div className='bank-card_content'>
                 <div>

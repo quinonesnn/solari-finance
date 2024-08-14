@@ -28,7 +28,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                     />
                 </SheetTrigger>
                 <SheetContent side='left' className="border-none bg-white">
-                    <Link href='/' className='flex cursor-pointer items-center gap-1 px-4'>
+                    <Link href='/home' className='flex cursor-pointer items-center gap-1 px-4'>
                         <Image
                             src='/icons/logo.svg'
                             alt='Solari Logo'

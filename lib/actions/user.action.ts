@@ -97,7 +97,7 @@ export const signUp = async ({ password, ...userData }: SignUpParams) => {
     const session = await account.createEmailPasswordSession(email, password);
 
     cookies().set("appwrite-session", session.secret, {
-      path: "/",
+      path: "/home",
       httpOnly: true,
       sameSite: "strict",
       secure: true,
@@ -238,7 +238,7 @@ export const exchangePublicToken = async ({
     });
 
     // Revalidate the path to reflect the changes
-    revalidatePath("/");
+    revalidatePath("/home");
 
     // Return a success message
     return parseStringify({

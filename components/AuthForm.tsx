@@ -12,6 +12,7 @@ import CustomInput from "./CustomInput"
 import { authFormSchema } from "@/lib/utils"
 import { Loader2 } from "lucide-react"
 import { signIn, signUp } from "@/lib/actions/user.action"
+import { getLoggedInUser } from '@/lib/actions/user.action';
 import PlaidLink from "./PlaidLink"
 
 const AuthForm = ({type} :{type: string}) => {
@@ -53,7 +54,7 @@ const AuthForm = ({type} :{type: string}) => {
                     email: data.email,
                     password: data.password
                 })
-                if (response) router.push('/')
+                if (response) router.push('/home')
             }
             setIsLoading(false)
         } catch(error) {

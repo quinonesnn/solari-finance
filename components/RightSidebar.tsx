@@ -31,7 +31,8 @@ const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
             <section className="banks">
                 <div className="flex w-full justify-between">
                 <h2 className="header-2">My Banks</h2>
-                <Link href="/" className="flex gap-2">
+                {/* This should be a Plaid link */}
+                <Link href="/home" className="flex gap-2">
                     <Image 
                     src="/icons/plus.svg"
                     width={20}

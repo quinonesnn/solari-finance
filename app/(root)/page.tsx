@@ -56,7 +56,7 @@ const LandingPage = async () => {
             </p>
           </div>
           <Image
-            src="/icons/TransactionHistory.png"
+            src="/landing/TransactionHistory.svg"
             alt="About Image"
             width={550}
             height={310}
@@ -78,7 +78,7 @@ const LandingPage = async () => {
           </div>
           <div className="order-2 lg:order-1">
             <Image
-              src="/icons/BankAccounts.png"
+              src="/landing/BankAccounts.svg"
               alt="About Image"
               width={550}
               height={310}
@@ -99,7 +99,7 @@ const LandingPage = async () => {
             </p>
           </div>
           <Image
-            src="/icons/PaymentTransfer.png"
+            src="/landing/BankTransfer.svg"
             alt="About Image"
             width={550}
             height={310}

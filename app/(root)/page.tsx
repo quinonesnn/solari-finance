@@ -95,7 +95,7 @@ const LandingPage = async () => {
               Transfer Money Seemlessly with other Solari Users
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              In app money transfers between several accounts between
+              In app money transfers between the people you trust and accounts you own. 
             </p>
           </div>
           <Image

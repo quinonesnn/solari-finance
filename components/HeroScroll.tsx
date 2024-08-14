@@ -22,7 +22,7 @@ const HeroScroll = () => {
                 <Image
                     src="/landing/SolariDashboard.svg"
                     alt="Hero Image"
-                    className="mx-auto rounded-2xl object-cover h-full max-md:h-50% object-center max-sm:relative max-sm:left-20 overflow-visible"
+                    className="mx-auto rounded-2xl object-cover h-full max-md:h-50% object-center"
                     width={750}
                     height={1400}
                     quality={100}
